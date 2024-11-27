@@ -7,7 +7,10 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "swiperjs.com",
-        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "randomuser.me",
       },
     ],
   },

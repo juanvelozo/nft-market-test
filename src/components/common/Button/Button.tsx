@@ -13,6 +13,7 @@ const Button: FC<ButtonProps> = ({
   iconStart,
   iconEnd,
   children,
+  className,
   ...props
 }) => {
   const variantStyles: Record<ButtonVariants, string> = {
@@ -23,9 +24,11 @@ const Button: FC<ButtonProps> = ({
 
   return (
     <button
-      className={`inline-flex items-center justify-center rounded-xl text-sm transition-colors focus:outline-none py-2.5 px-5 font-extrabold ${
-        variantStyles[variant!]
-      }`}
+      className={
+        `inline-flex items-center justify-center rounded-xl text-sm transition-colors focus:outline-none py-2.5 px-5 font-extrabold ${
+          variantStyles[variant!]
+        } ` + className
+      }
       {...props}
     >
       {iconStart && <span className="mr-2">{iconStart}</span>}

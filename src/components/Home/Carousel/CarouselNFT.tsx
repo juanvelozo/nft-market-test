@@ -4,10 +4,10 @@ import SwiperCore from "swiper";
 
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
-import { Card } from "@/components/common/Card/Card";
 import { useState } from "react";
+import { CarouselCard } from "./CarouselCard";
 
-export const Carousel = ({}: ICarousel): JSX.Element => {
+export const CarouselNFT = (): JSX.Element => {
   //constants
 
   //states
@@ -21,7 +21,7 @@ export const Carousel = ({}: ICarousel): JSX.Element => {
 
   //render
   return (
-    <div className="w-screen min-h-[430px]">
+    <div className="!w-screen min-h-[430px] mx-1">
       <Swiper
         navigation={false}
         pagination={{ clickable: true }}
@@ -34,21 +34,20 @@ export const Carousel = ({}: ICarousel): JSX.Element => {
           slideShadows: false,
           scale: 0.9,
         }}
-        onSlideChangeTransitionEnd={(s) => setCurrentSlide(s.activeIndex)}
         slidesPerView={4}
         centeredSlides
         initialSlide={4}
         centerInsufficientSlides
         spaceBetween={"15px"}
         loop={true}
-        onSlideChange={(s) => setCurrentSlide(s.activeIndex)}
+        onSlideChange={(s) => setCurrentSlide(s.realIndex)}
         style={{
           height: "500px",
           display: "flex",
           width: "80vw",
         }}
       >
-        {Array.from([0, 1, 2, 3, 4, 5, 6]).map((el) => {
+        {Array.from([0, 1, 2, 3, 4, 5, 6, 7]).map((el) => {
           return (
             <SwiperSlide
               tabIndex={el}
@@ -59,15 +58,10 @@ export const Carousel = ({}: ICarousel): JSX.Element => {
                 justifyContent: "center",
                 width: "min-content",
                 userSelect: "none",
+                filter: "drop-shadow(5px 10px 15px black)",
               }}
             >
-              <Card
-                img={
-                  currentSlide! == el
-                    ? "https://swiperjs.com/demos/images/nature-1.jpg"
-                    : ""
-                }
-              />
+              <CarouselCard isActive={currentSlide! == el} />
             </SwiperSlide>
           );
         })}
@@ -75,4 +69,3 @@ export const Carousel = ({}: ICarousel): JSX.Element => {
     </div>
   );
 };
-interface ICarousel {}

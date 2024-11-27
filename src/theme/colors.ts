@@ -1,4 +1,4 @@
-type ColorPalette = {
+export type ColorPalette = {
   primary: string;
   white: string;
   black: string;
