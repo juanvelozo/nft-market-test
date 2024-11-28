@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils/cn";
 import React, { ButtonHTMLAttributes, FC, ReactNode } from "react";
 
 type ButtonVariants = "primary" | "black" | "white";
@@ -24,11 +25,12 @@ const Button: FC<ButtonProps> = ({
 
   return (
     <button
-      className={
+      className={cn(
         `inline-flex items-center justify-center rounded-xl text-sm transition-colors focus:outline-none py-2.5 px-5 font-extrabold ${
           variantStyles[variant!]
-        } ` + className
-      }
+        } `,
+        className
+      )}
       {...props}
     >
       {iconStart && <span className="mr-2">{iconStart}</span>}
