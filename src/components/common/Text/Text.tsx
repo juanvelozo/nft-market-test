@@ -10,6 +10,7 @@ interface TextProps extends HTMLAttributes<HTMLParagraphElement> {
   font?: "Azeret Mono" | "Manrope";
   color?: TextColor;
   children?: ReactNode;
+  heavy?: boolean;
 }
 const sizeClasses: Record<TextSize, string> = {
   "12": "text-xs",
@@ -25,6 +26,7 @@ const Text: FC<TextProps> = ({
   font = "Manrope",
   color = "white",
   children,
+  heavy,
   className,
   ...props
 }) => {
@@ -32,7 +34,12 @@ const Text: FC<TextProps> = ({
 
   return (
     <p
-      className={cn(`${sizeClasses[size]} ${fontClasses} text-`, className)}
+      className={cn(
+        `${sizeClasses[size]} ${fontClasses} ${
+          heavy ? "font-extrabold" : "font-normal"
+        }`,
+        className
+      )}
       style={{ color: colors[color] }}
       {...props}
     >

@@ -26,18 +26,20 @@ export const CarouselTopSeller = (): JSX.Element => {
   return (
     <ContainerBox>
       <div className="flex items-center my-10">
-        <Text size={32}>Top sellers in</Text>
+        <Text size={32} heavy>
+          Top sellers in
+        </Text>
         <div className="cursor-pointer flex items-center justify-center gap-2">
           <select
             size={0}
             onChange={(e) => setSelectedPeriod(e.target.value as TimePeriod)}
-            className={`bg-transparent focus:ring-0 !border-none !ring-0 outline-none p-0 m-0 text-primary text-[32px] !w-[${selectedPeriod.length}ch]`}
+            className={`bg-transparent focus:ring-0 !border-none !ring-0 outline-none p-0 m-0 text-primary text-[32px] font-extrabold !w-[${selectedPeriod.length}ch]`}
           >
             {timePeriods.map((el, key) => (
               <option
                 key={key}
                 value={el}
-                className="text-foreground hover:bg-primary "
+                className="text-foreground hover:bg-primary font-normal"
               >
                 {TimePeriodLabelSelector[el]}
               </option>

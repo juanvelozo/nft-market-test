@@ -1,6 +1,10 @@
+import { TopCollectorsToday } from "@/components/Home/TopCollectors/TopCollectorsToday";
 import { CarouselTopSeller } from "@/components/Home/Carousel/CarouselTopSeller";
 import { DiscoverItem } from "@/components/Home/Discover/DiscoverItem";
 import { HeroHome } from "@/components/Home/Hero/HeroHome";
+import { TopCollectorsWeek } from "@/components/Home/TopCollectors/TopCollectorsWeek";
+import { SellNFTSteps } from "@/components/Home/SellNFTSteps/SellNFTSteps";
+import { NFTBanner } from "@/components/Home/NFTBanner/NFTBanner";
 
 export default function Home() {
   return (
@@ -9,6 +13,10 @@ export default function Home() {
         <HeroHome />
         <CarouselTopSeller />
         <DiscoverItem />
+        <TopCollectorsToday />
+        <TopCollectorsWeek />
+        <SellNFTSteps />
+        <NFTBanner />
       </main>
     </div>
   );
