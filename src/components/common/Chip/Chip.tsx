@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Text from "../common/Text/Text";
+import Text from "../Text/Text";
 
 export const Chip = ({ img, label }: IChip): JSX.Element => {
   return (

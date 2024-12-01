@@ -1,26 +1,23 @@
+"use client";
 import Image from "next/image";
 import Text from "../Text/Text";
+import { HTMLAttributes } from "react";
+import { useRouter } from "next/navigation";
 
 export const Card = ({
   img = "https://swiperjs.com/demos/images/nature-2.jpg",
   creator,
   priceBid,
   title,
+  ...props
 }: ICard): JSX.Element => {
-  //constants
-
-  //states
-
-  //hooks
-
-  //functions
-
-  //effects
-
-  //render
+  const { push } = useRouter();
 
   return (
-    <div className="bg-grayBackground min-w-[350px] min-h-[430px] rounded-3xl flex flex-col items-center p-4 gap-3">
+    <div
+      className="bg-grayBackground min-w-[350px] min-h-[430px] rounded-3xl flex flex-col items-center p-4 gap-3"
+      {...props}
+    >
       {img && (
         <Image
           alt="cardimg"
@@ -31,7 +28,12 @@ export const Card = ({
         />
       )}
       <div className="w-full flex flex-col gap-4">
-        <Text size={18} heavy>
+        <Text
+          size={18}
+          heavy
+          className="cursor-pointer"
+          onClick={() => push("/marketplace/product-detail/1")}
+        >
           {title}
         </Text>
         {creator && (
@@ -62,7 +64,7 @@ export const Card = ({
     </div>
   );
 };
-export interface ICard {
+export interface ICard extends HTMLAttributes<HTMLDivElement> {
   title?: string;
   img?: string;
   creator?: {

@@ -11,6 +11,7 @@ interface TextProps extends HTMLAttributes<HTMLParagraphElement> {
   color?: TextColor;
   children?: ReactNode;
   heavy?: boolean;
+  isSpan?: boolean;
 }
 const sizeClasses: Record<TextSize, string> = {
   "12": "text-xs",
@@ -28,10 +29,27 @@ const Text: FC<TextProps> = ({
   children,
   heavy,
   className,
+  isSpan,
   ...props
 }) => {
   const fontClasses = font === "Azeret Mono" ? "font-mono" : "font-sans";
 
+  if (isSpan) {
+    return (
+      <span
+        className={cn(
+          `${sizeClasses[size]} ${fontClasses} ${
+            heavy ? "font-extrabold" : "font-normal"
+          }`,
+          className
+        )}
+        style={{ color: colors[color] }}
+        {...props}
+      >
+        {children}
+      </span>
+    );
+  }
   return (
     <p
       className={cn(

@@ -1,27 +1,19 @@
+"use client";
 import Link from "next/link";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "../DropdownMenu/DropdownMenu";
+} from "../../common/DropdownMenu/DropdownMenu";
 import { ChevronDown, Wallet } from "lucide-react";
 import { Open9Logo } from "@/components/icons/Open9Logo";
 import { BurgerMenuIcon } from "@/components/icons/burgerMenuIcon";
-import Button from "../Button/Button";
+import Button from "../../common/Button/Button";
+import { useRouter } from "next/navigation";
 
 export const HeaderWeb = (): JSX.Element => {
-  //constants
-
-  //states
-
-  //hooks
-
-  //functions
-
-  //effects
-
-  //render
+  const { push } = useRouter();
 
   return (
     <header className="w-full p-4">
@@ -90,7 +82,11 @@ export const HeaderWeb = (): JSX.Element => {
           </nav>
 
           <div className="flex items-center gap-4">
-            <Button variant="primary" iconEnd={<Wallet />}>
+            <Button
+              variant="primary"
+              iconEnd={<Wallet />}
+              onClick={() => push("/login")}
+            >
               Wallet Conect
             </Button>
             <BurgerMenuIcon />

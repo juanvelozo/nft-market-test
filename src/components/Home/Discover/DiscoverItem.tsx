@@ -19,16 +19,28 @@ export const DiscoverItem = (): JSX.Element => {
         </div>
       </div>
       <div className="flex gap-4">
-        <Select options={[]} icon={<Archive />} placeholder="Category" />
-        <Select options={[]} icon={<Box />} placeholder="Items" />
-        <Select options={[]} icon={<Box />} placeholder="Status" />
         <Select
-          options={[]}
+          options={[{ label: "option", value: "1" }]}
+          icon={<Archive />}
+          placeholder="Category"
+        />
+        <Select
+          options={[{ label: "option", value: "1" }]}
+          icon={<Box />}
+          placeholder="Items"
+        />
+        <Select
+          options={[{ label: "option", value: "1" }]}
+          icon={<Box />}
+          placeholder="Status"
+        />
+        <Select
+          options={[{ label: "option", value: "1" }]}
           icon={<CircleDollarSign />}
           placeholder="Price range"
         />
         <Select
-          options={[]}
+          options={[{ label: "option", value: "1" }]}
           icon={<CircleDollarSign />}
           placeholder="Sort by"
         />

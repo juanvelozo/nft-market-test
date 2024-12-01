@@ -4,9 +4,14 @@ import Text from "@/components/common/Text/Text";
 import { ArrowUpRight } from "lucide-react";
 import BG from "@/assets/home/CTAbg.png";
 import Image from "next/image";
-export const NFTBanner = (): JSX.Element => {
+import { cn } from "@/lib/utils/cn";
+export const NFTBanner = ({
+  className,
+}: {
+  className?: string;
+}): JSX.Element => {
   return (
-    <ContainerBox className="w-[70vw]">
+    <ContainerBox className={cn("w-[70vw]", className)}>
       <div className="mx-auto min-w-[1110px] h-[268px] bg-primary p-10 flex justify-between rounded-3xl overflow-hidden relative">
         <div className="w-1/3 flex flex-col gap-7">
           <Text color="black" size={32} heavy>
@@ -16,14 +21,14 @@ export const NFTBanner = (): JSX.Element => {
             <Button
               iconEnd={<ArrowUpRight />}
               variant="black"
-              className="!text-primary"
+              className="!text-primary truncate"
             >
               Explore now
             </Button>
             <Button
               iconEnd={<ArrowUpRight />}
               variant="black"
-              className="!text-primary"
+              className="!text-primary truncate"
             >
               Create Your First NFT
             </Button>

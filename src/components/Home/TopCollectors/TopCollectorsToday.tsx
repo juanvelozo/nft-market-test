@@ -1,5 +1,5 @@
 "use client";
-import { Chip } from "@/components/Chip/Chip";
+import { Chip } from "@/components/common/Chip/Chip";
 import { TopSeller } from "../Carousel/TopSellerAvatar";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Text from "@/components/common/Text/Text";

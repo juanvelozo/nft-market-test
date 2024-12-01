@@ -2,7 +2,7 @@
 
 import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils/cn";
-import { KeyboardEvent, ReactNode, useEffect, useRef, useState } from "react";
+import { ReactNode, useEffect, useRef, useState } from "react";
 
 export interface Option {
   label: string;
@@ -45,40 +45,6 @@ export function Select({
     setIsOpen(false);
   };
 
-  const handleKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
-    if (disabled) return;
-
-    switch (event.key) {
-      case "Enter":
-      case " ":
-        event.preventDefault();
-        if (isOpen && highlightedIndex !== -1) {
-          handleOptionClick(options[highlightedIndex]);
-        } else {
-          setIsOpen(true);
-        }
-        break;
-      case "ArrowUp":
-      case "ArrowDown":
-        event.preventDefault();
-        if (!isOpen) {
-          setIsOpen(true);
-        } else {
-          const change = event.key === "ArrowUp" ? -1 : 1;
-          setHighlightedIndex((prev) => {
-            let newIndex = prev + change;
-            if (newIndex < 0) newIndex = options.length - 1;
-            if (newIndex >= options.length) newIndex = 0;
-            return newIndex;
-          });
-        }
-        break;
-      case "Escape":
-        setIsOpen(false);
-        break;
-    }
-  };
-
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -116,7 +82,6 @@ export function Select({
             : "bg-background hover:bg-accent cursor-pointer"
         )}
         onClick={toggleOpen}
-        onKeyDown={handleKeyDown}
       >
         <div className="flex items-center justify-center gap-2">
           {icon}
@@ -148,13 +113,13 @@ export function Select({
               role="option"
               aria-selected={option.value === value}
               className={cn(
-                "px-3 py-2 text-sm cursor-pointer",
+                " px-3 py-2 text-sm cursor-pointer",
                 "transition-colors duration-200",
-                index === highlightedIndex && "bg-accent",
+                index === highlightedIndex && "bg-grayBackground",
                 option.value === value
                   ? "text-primary font-medium"
-                  : "text-foreground",
-                "hover:bg-accent focus:bg-accent outline-none"
+                  : "text-white",
+                "bg-grayBackground hover:bg-accent focus:bg-accent outline-none"
               )}
               onClick={() => handleOptionClick(option)}
               onMouseEnter={() => setHighlightedIndex(index)}

@@ -9,7 +9,7 @@ import { NFTBanner } from "@/components/Home/NFTBanner/NFTBanner";
 export default function Home() {
   return (
     <div className="items-center justify-items-center min-h-screen  font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col items-center sm:items-start">
+      <div className="flex flex-col items-center sm:items-start">
         <HeroHome />
         <CarouselTopSeller />
         <DiscoverItem />
@@ -17,7 +17,7 @@ export default function Home() {
         <TopCollectorsWeek />
         <SellNFTSteps />
         <NFTBanner />
-      </main>
+      </div>
     </div>
   );
 }
