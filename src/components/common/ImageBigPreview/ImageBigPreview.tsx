@@ -8,6 +8,7 @@ import { IconButton } from "../IconButton/IconButton";
 import Text from "../Text/Text";
 import { EthIcon } from "@/components/icons/ETHIcon";
 import { Chip } from "../Chip/Chip";
+import { CountdownChip } from "../CountdownChip/CountdownChip";
 
 export const ImageBigPreview = ({
   url = "",
@@ -43,7 +44,7 @@ export const ImageBigPreview = ({
         />
       </div>
       <div className="absolute bottom-5 left-56 right-56">
-        <Chip label="2h 4m 32s" />
+        <CountdownChip initialMilliseconds={7472000} />
       </div>
     </div>
   );

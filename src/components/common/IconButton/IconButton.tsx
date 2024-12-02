@@ -10,7 +10,7 @@ export const IconButton = ({
   return (
     <button
       className={cn(
-        `bg-[#FFFFFF1A] min-w-4 min-h-4 !w-[${size}px] !h-[${size}px] p-2 rounded-full hover:bg-foreground`,
+        `bg-[#FFFFFF1A] hover:bg-[#5e5d5d] min-w-4 min-h-4 !w-[${size}px] !h-[${size}px] px-[10px] py-[6px] rounded-full`,
         className
       )}
       {...props}

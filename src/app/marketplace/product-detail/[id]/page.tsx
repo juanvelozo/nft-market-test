@@ -14,9 +14,9 @@ import { OffersCard } from "@/components/ProductDetail/OffersCard";
 export default function ProductDetailPage() {
   return (
     <ContainerBox className="max-w-[1110px]">
-      <div className="flex items-center gap-4 my-4">
+      <div className="flex items-start gap-4 my-4">
         <ImageBigPreview url="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" />
-        <div className="w-1/2 flex flex-col gap-4 items-center">
+        <div className="w-1/2 flex flex-col gap-7 items-center">
           <ProductInfo />
           <SaleCard />
           <DescriptionCard />

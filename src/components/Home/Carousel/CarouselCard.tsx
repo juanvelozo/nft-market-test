@@ -1,4 +1,5 @@
 import Button from "@/components/common/Button/Button";
+import { CountdownChip } from "@/components/common/CountdownChip/CountdownChip";
 import Text from "@/components/common/Text/Text";
 import { EthIcon } from "@/components/icons/ETHIcon";
 import { Heart } from "lucide-react";
@@ -8,18 +9,6 @@ export const CarouselCard = ({
   img = "https://swiperjs.com/demos/images/nature-2.jpg",
   isActive,
 }: ICard): JSX.Element => {
-  //constants
-
-  //states
-
-  //hooks
-
-  //functions
-
-  //effects
-
-  //render
-
   return (
     <div
       className={` ${
@@ -30,9 +19,7 @@ export const CarouselCard = ({
         <div className="flex flex-col items-center justify-between h-full">
           <div className="relative">
             <div className="absolute top-3 right-3 flex items-center gap-1">
-              <div className="bg-[#5e5d5d] px-[10px] py-[6px] rounded-full">
-                <Text size={12}>2h 4m 32s</Text>
-              </div>
+              <CountdownChip initialMilliseconds={7472000} />
               <div className="bg-[#5e5d5d] p-[6px] rounded-full">
                 <Heart color="white" size={16} />
               </div>
