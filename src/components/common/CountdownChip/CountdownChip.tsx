@@ -1,11 +1,16 @@
 import React, { useState, useEffect, FC } from "react";
 import Text from "../Text/Text";
+import { cn } from "@/lib/utils/cn";
 
 interface CountdownProps {
   initialMilliseconds: number;
+  className?: string;
 }
 
-export const CountdownChip: FC<CountdownProps> = ({ initialMilliseconds }) => {
+export const CountdownChip: FC<CountdownProps> = ({
+  initialMilliseconds,
+  className,
+}) => {
   const [timeLeft, setTimeLeft] = useState<number>(initialMilliseconds);
 
   useEffect(() => {
@@ -38,7 +43,12 @@ export const CountdownChip: FC<CountdownProps> = ({ initialMilliseconds }) => {
 
   return (
     <div>
-      <div className="bg-[#FFFFFF1A] px-[10px] py-[6px] rounded-full">
+      <div
+        className={cn(
+          "bg-[#FFFFFF1A] px-[10px] py-[6px] rounded-full",
+          className
+        )}
+      >
         <Text size={12} className="text-center">
           {formatTime(timeLeft)}
         </Text>

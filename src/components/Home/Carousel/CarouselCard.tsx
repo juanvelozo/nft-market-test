@@ -19,7 +19,10 @@ export const CarouselCard = ({
         <div className="flex flex-col items-center justify-between h-full">
           <div className="relative">
             <div className="absolute top-3 right-3 flex items-center gap-1">
-              <CountdownChip initialMilliseconds={7472000} />
+              <CountdownChip
+                initialMilliseconds={7472000}
+                className="bg-[#5e5d5d]"
+              />
               <div className="bg-[#5e5d5d] p-[6px] rounded-full">
                 <Heart color="white" size={16} />
               </div>
