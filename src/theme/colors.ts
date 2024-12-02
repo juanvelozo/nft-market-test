@@ -4,6 +4,7 @@ export type ColorPalette = {
   black: string;
   grayText: string;
   grayBackground: string;
+  foreground: string;
 };
 
 const colors: ColorPalette = {
@@ -12,6 +13,7 @@ const colors: ColorPalette = {
   black: "#161616",
   grayText: "#FFFFFF87",
   grayBackground: "#1E1E1E",
+  foreground: "#161616",
 };
 
 export default colors;
