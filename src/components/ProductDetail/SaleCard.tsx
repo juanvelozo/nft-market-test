@@ -8,7 +8,9 @@ export const SaleCard = ({}: ISaleCard): JSX.Element => {
     <AccordeonCard
       content={
         <div>
-          <Text color="grayText">Current price</Text>
+          <Text color="grayText" font="Azeret Mono" size={12}>
+            Current price
+          </Text>
           <div className="flex items-center justify-between">
             <Text size={32} heavy>
               0,032 ETH{" "}

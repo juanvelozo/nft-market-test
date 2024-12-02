@@ -12,7 +12,6 @@ export const AccordeonCard = ({
       defaultExpandedKeys={["1"]}
       itemClasses={{
         base: "bg-grayBackground w-full px-0 shadow-none px-4",
-        //     startContent: "bg-grayBackground",
       }}
     >
       <AccordionItem
@@ -20,7 +19,9 @@ export const AccordeonCard = ({
         aria-label="AccordionCard 1"
         title={title}
         startContent={icon}
-        classNames={{ title: "text-white" }}
+        classNames={{
+          title: "text-white text-sm font-bold font-manropeRegular",
+        }}
       >
         {content}
       </AccordionItem>

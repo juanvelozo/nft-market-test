@@ -14,8 +14,9 @@ export const CustomTable = ({ columns, rows }: ICustomTable): JSX.Element => {
       aria-label="customTable"
       shadow="none"
       classNames={{
-        th: "bg-transparent border-y border-white",
+        th: "bg-transparent border-b border-white text-white",
         wrapper: "bg-transparent",
+        tr: "font-azeretMonoRegular",
       }}
       removeWrapper
     >

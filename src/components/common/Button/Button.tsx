@@ -28,7 +28,7 @@ const Button: FC<ButtonProps> = ({
   return (
     <button
       className={cn(
-        `inline-flex items-center justify-center rounded-xl text-sm transition-colors focus:outline-none py-2.5 truncate px-5 font-bold ${
+        `inline-flex items-center font-manropeRegular justify-center rounded-xl text-sm transition-colors focus:outline-none py-2.5 truncate px-5 font-bold ${
           variantStyles[variant!]
         } `,
         className

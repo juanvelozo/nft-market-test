@@ -36,10 +36,14 @@ export const RecentlyAddedCard = (): JSX.Element => {
             />
             <div>
               <Text>{el.title}</Text>
-              <Text>@{el.creator.userName}</Text>
+              <Text font="Azeret Mono" color="grayText" size={14}>
+                @{el.creator.userName}
+              </Text>
             </div>
           </div>
-          <Text>Mon. 08 May</Text>
+          <Text size={14} color="grayText">
+            Mon. 08 May
+          </Text>
         </div>
       ))}
     </div>

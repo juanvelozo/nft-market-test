@@ -31,7 +31,7 @@ export const Input: FC<InputProps> = ({
         <input
           type={isPassword && showPassword ? "text" : type}
           className={cn(
-            `w-full px-3 py-2 bg-foreground border border-zinc-800 rounded-xl text-zinc-100 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-600 focus:border-transparent ${
+            `w-full px-4 py-3 bg-foreground font-azeretMonoRegular text-xs border border-zinc-800 rounded-xl text-zinc-100 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-600 focus:border-transparent ${
               isPassword ? "pr-10" : ""
             }`,
             className

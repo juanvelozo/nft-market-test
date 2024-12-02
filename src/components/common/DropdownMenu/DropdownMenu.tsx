@@ -57,7 +57,7 @@ export function DropdownMenuTrigger({
   return (
     <button
       type="button"
-      className={`inline-flex justify-center items-center w-full text-base font-medium text-white  rounded-md  focus:outline-none focus:ring-0 hover:text-primary gap-2 ${className}`}
+      className={`inline-flex font-manropeRegular justify-center items-center w-full text-base text-white  rounded-md  focus:outline-none focus:ring-0 hover:text-primary gap-2 ${className}`}
       onClick={() => setIsOpen(!isOpen)}
       aria-haspopup="true"
       aria-expanded={isOpen}

@@ -24,32 +24,50 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4">Marketplace</h3>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <a href="/nfts" className="hover:text-primary">
+                <a
+                  href="/nfts"
+                  className="text-sm font-azeretMonoRegular hover:text-primary"
+                >
                   ALL NFTs
                 </a>
               </li>
               <li>
-                <a href="/virtual-worlds" className="hover:text-primary">
+                <a
+                  href="/virtual-worlds"
+                  className="text-sm font-azeretMonoRegular hover:text-primary"
+                >
                   Virtual worlds
                 </a>
               </li>
               <li>
-                <a href="/domain-names" className="hover:text-primary">
+                <a
+                  href="/domain-names"
+                  className="text-sm font-azeretMonoRegular hover:text-primary"
+                >
                   Domain names
                 </a>
               </li>
               <li>
-                <a href="/photography" className="hover:text-primary">
+                <a
+                  href="/photography"
+                  className="text-sm font-azeretMonoRegular hover:text-primary"
+                >
                   Photography
                 </a>
               </li>
               <li>
-                <a href="/digital-art" className="hover:text-primary">
+                <a
+                  href="/digital-art"
+                  className="text-sm font-azeretMonoRegular hover:text-primary"
+                >
                   Digital art
                 </a>
               </li>
               <li>
-                <a href="/music" className="hover:text-primary">
+                <a
+                  href="/music"
+                  className="text-sm font-azeretMonoRegular hover:text-primary"
+                >
                   Music
                 </a>
               </li>
@@ -61,32 +79,50 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4">Resource</h3>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <a href="/help-center" className="hover:text-primary">
+                <a
+                  href="/help-center"
+                  className="text-sm font-azeretMonoRegular hover:text-primary"
+                >
                   Help Center
                 </a>
               </li>
               <li>
-                <a href="/platform-status" className="hover:text-primary">
+                <a
+                  href="/platform-status"
+                  className="text-sm font-azeretMonoRegular hover:text-primary"
+                >
                   Platform status
                 </a>
               </li>
               <li>
-                <a href="/partners" className="hover:text-primary">
+                <a
+                  href="/partners"
+                  className="text-sm font-azeretMonoRegular hover:text-primary"
+                >
                   Partners
                 </a>
               </li>
               <li>
-                <a href="/community" className="hover:text-primary">
+                <a
+                  href="/community"
+                  className="text-sm font-azeretMonoRegular hover:text-primary"
+                >
                   Discord community
                 </a>
               </li>
               <li>
-                <a href="/auctions" className="hover:text-primary">
+                <a
+                  href="/auctions"
+                  className="text-sm font-azeretMonoRegular hover:text-primary"
+                >
                   Live auctions
                 </a>
               </li>
               <li>
-                <a href="/discover" className="hover:text-primary">
+                <a
+                  href="/discover"
+                  className="text-sm font-azeretMonoRegular hover:text-primary"
+                >
                   Discover
                 </a>
               </li>
@@ -98,32 +134,50 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4">Account</h3>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <a href="/authors" className="hover:text-primary">
+                <a
+                  href="/authors"
+                  className="text-sm font-azeretMonoRegular hover:text-primary"
+                >
                   Authors
                 </a>
               </li>
               <li>
-                <a href="/collection" className="hover:text-primary">
+                <a
+                  href="/collection"
+                  className="text-sm font-azeretMonoRegular hover:text-primary"
+                >
                   My Collection
                 </a>
               </li>
               <li>
-                <a href="/profile" className="hover:text-primary">
+                <a
+                  href="/profile"
+                  className="text-sm font-azeretMonoRegular hover:text-primary"
+                >
                   Author Profile
                 </a>
               </li>
               <li>
-                <a href="/dashboard" className="hover:text-primary">
+                <a
+                  href="/dashboard"
+                  className="text-sm font-azeretMonoRegular hover:text-primary"
+                >
                   Go to dashboard
                 </a>
               </li>
               <li>
-                <a href="/collection" className="hover:text-primary">
+                <a
+                  href="/collection"
+                  className="text-sm font-azeretMonoRegular hover:text-primary"
+                >
                   Collection
                 </a>
               </li>
               <li>
-                <a href="/create" className="hover:text-primary">
+                <a
+                  href="/create"
+                  className="text-sm font-azeretMonoRegular hover:text-primary"
+                >
                   Create Collection
                 </a>
               </li>
@@ -135,12 +189,18 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <a href="/help" className="hover:text-primary">
+                <a
+                  href="/help"
+                  className="text-sm font-azeretMonoRegular hover:text-primary"
+                >
                   Help Center
                 </a>
               </li>
               <li>
-                <a href="/platform-status" className="hover:text-primary">
+                <a
+                  href="/platform-status"
+                  className="text-sm font-azeretMonoRegular hover:text-primary"
+                >
                   Platform status
                 </a>
               </li>
@@ -170,12 +230,14 @@ export function Footer() {
 
         {/* Bottom Section */}
         <div className="border-t border-gray-800 pt-8 mt-8 text-sm text-gray-400 flex flex-col md:flex-row justify-between items-center">
-          <div>© 2023 OpeN9 - Made By Themesflat</div>
+          <div className="text-sm font-azeretMonoRegular">
+            © 2023 OpeN9 - Made By Themesflat
+          </div>
           <div className="flex gap-4 mt-4 md:mt-0">
-            <a href="/privacy" className="hover:text-primary">
+            <a href="/privacy" className="text-sm font-azeretMonoRegular">
               Privacy Policy
             </a>
-            <a href="/terms" className="hover:text-primary">
+            <a href="/terms" className="text-sm font-azeretMonoRegular">
               Terms of Service
             </a>
           </div>

@@ -46,16 +46,18 @@ export const Card = ({
               height={38}
             />
             <div>
-              <Text color="grayText" size={12}>
+              <Text color="grayText" size={12} font="Azeret Mono">
                 Created by:
               </Text>
-              <Text size={12}>{creator?.name}</Text>
+              <Text size={12} font="Azeret Mono">
+                {creator?.name}
+              </Text>
             </div>
           </div>
         )}
         <div className="w-full h-[1px] bg-grayText" />
         <div className="flex items-center justify-between">
-          <Text size={12} color="grayText">
+          <Text size={12} color="grayText" font="Azeret Mono">
             Current Bid:
           </Text>
           <Text size={12}>{priceBid}</Text>

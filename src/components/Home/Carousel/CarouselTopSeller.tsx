@@ -33,7 +33,7 @@ export const CarouselTopSeller = (): JSX.Element => {
           <select
             size={0}
             onChange={(e) => setSelectedPeriod(e.target.value as TimePeriod)}
-            className={`bg-transparent focus:ring-0 !border-none !ring-0 outline-none p-0 m-0 text-primary text-[32px] font-extrabold !w-[${selectedPeriod.length}ch]`}
+            className={`bg-transparent font-manropeRegular focus:ring-0 !border-none !ring-0 outline-none p-0 m-0 text-primary text-[32px] font-extrabold !w-[${selectedPeriod.length}ch]`}
           >
             {timePeriods.map((el, key) => (
               <option

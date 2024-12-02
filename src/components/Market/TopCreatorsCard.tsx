@@ -25,7 +25,9 @@ export const TopCreatorsCard = (): JSX.Element => {
               />
               <div>
                 <Text>{el.name}</Text>
-                <Text color="grayText">@{el.userName}</Text>
+                <Text color="grayText" font="Azeret Mono" size={14}>
+                  @{el.userName}
+                </Text>
               </div>
             </div>
             <Button variant={i == 3 ? "primary" : "white"}>

@@ -38,7 +38,9 @@ export const CollectionCard = ({
           <Text size={18} heavy>
             {title}
           </Text>
-          <Text>@{creator?.name}</Text>
+          <Text font="Azeret Mono" size={12} color="grayText">
+            @{creator?.name}
+          </Text>
         </div>
         <div className="flex gap-6">
           <div className="flex flex-col items-center justify-center gap-1">

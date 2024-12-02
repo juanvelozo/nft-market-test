@@ -27,6 +27,7 @@ export const IconOptions = ({
             onClick={el.onClick}
             color={el.color}
             startContent={el.icon}
+            className="font-azeretMonoRegular"
           >
             {el.label}
           </DropdownItem>

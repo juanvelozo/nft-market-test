@@ -63,7 +63,12 @@ export const ProductInfo = (): JSX.Element => {
       <Text size={32} heavy>
         Themesflat #0270
       </Text>
-      <User name="Owned by" description="Juan Velozo" />
+      <User
+        name="Owned by"
+        description="Juan Velozo"
+        className="font-azeretMonoRegular"
+        classNames={{ description: "text-sm text-white" }}
+      />
       <div className="flex items-center gap-4">
         <Chip
           startContent={<EyeIcon color="#fff" />}

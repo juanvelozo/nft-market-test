@@ -17,6 +17,12 @@ export default {
         grayBackground: "var(--gray-background)",
         primary: "var(--primary)",
       },
+      fontFamily: {
+        manropeRegular: ["var(--font-manrope-regular)", "sans-serif"], // Usar la fuente regular
+        manropeMedium: ["var(--font-manrope-medium)", "sans-serif"], // Usar la fuente medium
+        manropeBold: ["var(--font-manrope-bold)", "sans-serif"], // Usar la fuente bold
+        azeretMonoRegular: ["var(--font-azeretMono-regular)", "font-mono"],
+      },
     },
   },
   darkMode: "class",

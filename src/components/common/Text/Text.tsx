@@ -32,7 +32,8 @@ const Text: FC<TextProps> = ({
   isSpan,
   ...props
 }) => {
-  const fontClasses = font === "Azeret Mono" ? "font-mono" : "font-sans";
+  const fontClasses =
+    font === "Azeret Mono" ? "font-azeretMonoRegular" : "font-manropeRegular";
 
   if (isSpan) {
     return (

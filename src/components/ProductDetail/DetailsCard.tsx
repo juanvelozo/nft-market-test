@@ -9,32 +9,52 @@ export const DetailsCard = ({}: IDetailsCard): JSX.Element => {
       content={
         <div className="w-full flex flex-col gap-3 p-2">
           <div className="flex items-center justify-between">
-            <Text size={14}>Contract Address</Text>
+            <Text size={14} font="Azeret Mono">
+              Contract Address
+            </Text>
             <Text size={14} color="primary">
               {tokenData.contractAddress}
             </Text>
           </div>
           <div className="flex items-center justify-between">
-            <Text size={14}>Token ID</Text>
+            <Text size={14} font="Azeret Mono">
+              Token ID
+            </Text>
             <Text size={14} color="primary">
               {tokenData.tokenId}
             </Text>
           </div>
           <div className="flex items-center justify-between">
-            <Text size={14}>Token Standard</Text>
-            <Text size={14}>{tokenData.tokenStandard}</Text>
+            <Text size={14} font="Azeret Mono">
+              Token Standard
+            </Text>
+            <Text size={14} font="Azeret Mono">
+              {tokenData.tokenStandard}
+            </Text>
           </div>
           <div className="flex items-center justify-between">
-            <Text size={14}>Chain</Text>
-            <Text size={14}>{tokenData.chain}</Text>
+            <Text size={14} font="Azeret Mono">
+              Chain
+            </Text>
+            <Text size={14} font="Azeret Mono">
+              {tokenData.chain}
+            </Text>
           </div>
           <div className="flex items-center justify-between">
-            <Text size={14}>Last updated</Text>
-            <Text size={14}>{tokenData.lastUpdated}</Text>
+            <Text size={14} font="Azeret Mono">
+              Last updated
+            </Text>
+            <Text size={14} font="Azeret Mono">
+              {tokenData.lastUpdated}
+            </Text>
           </div>
           <div className="flex items-center justify-between">
-            <Text size={14}>Creators earnings</Text>
-            <Text size={14}>{tokenData.creatorEarnings}</Text>
+            <Text size={14} font="Azeret Mono">
+              Creators earnings
+            </Text>
+            <Text size={14} font="Azeret Mono">
+              {tokenData.creatorEarnings}
+            </Text>
           </div>
         </div>
       }

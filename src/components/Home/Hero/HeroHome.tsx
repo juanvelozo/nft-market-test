@@ -10,10 +10,10 @@ export const HeroHome = (): JSX.Element => {
   return (
     <ContainerBox className="relative w-full flex items-center justify-center">
       <div className="flex flex-col items-center justify-start gap-[50px] w-[634px] text-center absolute top-24">
-        <Text size={54} heavy>
+        <Text size={54} heavy className="font-bold">
           World of top works
         </Text>
-        <Text size={14} color="grayText">
+        <Text size={14} color="grayText" font="Azeret Mono">
           Welcome to the world of rare digital art. Explore the best art from
           hand-picked digital artist out there and find the hidden gem.
         </Text>

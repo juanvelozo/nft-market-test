@@ -4,18 +4,24 @@ import "./globals.css";
 import { HeaderWeb } from "@/components/Layout/Header/HeaderWeb";
 import { Footer } from "@/components/Layout/Footer/Footer";
 import { usePathname } from "next/navigation";
-import { Aside } from "@/components/Layout/Aside/Aside";
 import { Providers } from "./providers";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const ManropeRegular = localFont({
+  src: "./fonts/Manrope-Regular.ttf",
+  variable: "--font-manrope-regular",
+  weight: "400",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const ManropeBold = localFont({
+  src: "./fonts/Manrope-Bold.ttf",
+  variable: "--font-manrope-regular",
+  weight: "800",
+});
+
+const AzeretMonoRegular = localFont({
+  src: "./fonts/AzeretMono-Regular.ttf",
+  variable: "--font-azeretMono-regular",
+  weight: "400",
 });
 
 export default function RootLayout({
@@ -28,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${AzeretMonoRegular.variable} ${ManropeBold.variable} ${ManropeRegular.variable} antialiased`}
       >
         <div>
           <Providers>

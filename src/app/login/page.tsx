@@ -10,22 +10,35 @@ export default function Login() {
         <Text size={32} className="self-center" heavy>
           Login
         </Text>
-        <Text className="self-center" color="grayText">
+        <Text
+          className="self-center"
+          color="grayText"
+          font="Azeret Mono"
+          size={14}
+        >
           Get started today by entering just a few details
         </Text>
         <div className="bg-[#232323] rounded-3xl p-10">
           <LoginForm />
           <div className="flex items-center my-4 gap-4">
             <div className="h-[1px] w-full bg-grayBackground" />
-            <Text className="truncate w-1/3" size={14} color="grayText">
+            <Text
+              className="truncate w-2/3"
+              size={14}
+              color="grayText"
+              font="Azeret Mono"
+            >
               or continue
             </Text>
             <div className="h-[1px] w-full bg-grayBackground" />
           </div>
           <SocialLogin />
-          <Text size={14} className="text-center mt-4">
+          <Text size={14} className="text-center mt-4 font-azeretMonoRegular">
             Don&apos;t have an account?{" "}
-            <Link href="/" className="text-sm text-primary">
+            <Link
+              href="/"
+              className="text-sm text-primary font-azeretMonoRegular"
+            >
               Sign up
             </Link>
           </Text>

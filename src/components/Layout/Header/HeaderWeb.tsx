@@ -38,7 +38,7 @@ export const HeaderWeb = (): JSX.Element => {
 
             <Link
               href="/about"
-              className="hover:text-primary font-medium text-white text-base"
+              className="hover:text-primary font-manropeRegular text-white text-base"
             >
               About us
             </Link>
@@ -75,7 +75,7 @@ export const HeaderWeb = (): JSX.Element => {
 
             <Link
               href="/contact"
-              className="hover:text-primary font-medium text-white text-base"
+              className="hover:text-primary font-manropeRegular text-white text-base"
             >
               Contact
             </Link>

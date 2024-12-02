@@ -16,7 +16,7 @@ export const SellNFTCard = ({
         Step {step}
       </Text>
       <Text size={18}>{title}</Text>
-      <Text size={14} color="grayText">
+      <Text size={14} color="grayText" font="Azeret Mono">
         {description}
       </Text>
     </div>

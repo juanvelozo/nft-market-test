@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Input } from "../common/Input/Input";
 import Button from "../common/Button/Button";
 import { useRouter } from "next/navigation";
+import { ArrowUpRight } from "lucide-react";
 
 export const LoginForm = (): JSX.Element => {
   const { push } = useRouter();
@@ -17,10 +18,14 @@ export const LoginForm = (): JSX.Element => {
         type="password"
         label="Password*"
       />
-      <Link href="/" className="text-sm">
+      <Link href="/" className="text-sm font-azeretMonoRegular self-end">
         Forget password?
       </Link>
-      <Button className="w-full" onClick={() => push("/marketplace/market")}>
+      <Button
+        className="w-full font-azeretMonoRegular"
+        iconEnd={<ArrowUpRight size={14} />}
+        onClick={() => push("/marketplace/market")}
+      >
         Login
       </Button>
     </form>

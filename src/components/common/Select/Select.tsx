@@ -85,7 +85,9 @@ export function Select({
       >
         <div className="flex items-center justify-center gap-2">
           {icon}
-          <span className={!selectedOption ? "text-muted-foreground" : ""}>
+          <span
+            className={!selectedOption ? "text-white font-manropeRegular" : ""}
+          >
             {selectedOption ? selectedOption.label : placeholder}
           </span>
         </div>
@@ -113,7 +115,7 @@ export function Select({
               role="option"
               aria-selected={option.value === value}
               className={cn(
-                " px-3 py-2 text-sm cursor-pointer",
+                " px-3 py-2 text-sm cursor-pointer font-manropeRegular",
                 "transition-colors duration-200",
                 index === highlightedIndex && "bg-grayBackground",
                 option.value === value
